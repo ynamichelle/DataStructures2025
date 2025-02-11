@@ -2,7 +2,7 @@ from collections import deque
 
 class TaskScheduler:
     def __init__(self):
-        self.task_queue = deque()  # Use deque for efficient queue operations
+        self.task_queue = deque()  
 
     def add_task(self, task):
         self.task_queue.append(task)
@@ -15,11 +15,8 @@ class TaskScheduler:
 
         task = self.task_queue.popleft()
         print(f"Processing task '{task}'...")
-        # Simulate task execution (replace with actual task logic)
-        # ...
         print(f"Task '{task}' completed.")
 
-# Example usage:
 scheduler = TaskScheduler()
 
 scheduler.add_task("Send email")
